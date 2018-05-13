@@ -1,0 +1,10 @@
+.DS_Store
+.settings
+.vscode/
+*.orig
+*~
+
+*.log
+
+appendonly.aof
+dump.rdb

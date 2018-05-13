@@ -1,0 +1,16 @@
+tap "tomanthony/brews"
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "caskroom/cask"
+brew "bash-completion"
+brew "cockroach"
+brew "ffmpeg", args: ["with-fdk-aac", "with-freetype", "with-libass", "with-libvorbis", "with-libvpx", "with-opus", "with-sdl2", "with-x265"]
+brew "git"
+brew "git-flow"
+brew "go"
+brew "hugo"
+brew "node"
+brew "ranger"
+brew "thefuck"
+brew "yarn", args: ["without-node"]
+brew "tomanthony/brews/itermocil"
