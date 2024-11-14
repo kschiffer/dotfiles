@@ -1,0 +1,1 @@
+{"title":"","rules":[{"description":"a = shift","manipulators":[{"type":"basic","from":{"key_code":"a"},"to_if_held_down":[{"repeat":false,"key_code":"left_shift"}]}]},{"description":"o = shift","manipulators":[{"type":"basic","from":{"key_code":"o"},"to_if_held_down":[{"repeat":false,"key_code":"right_shift"}]}]}]}

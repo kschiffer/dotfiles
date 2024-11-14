@@ -3,8 +3,25 @@
 .vscode/
 *.orig
 *~
-
 *.log
-
+.envrc
+.direnv
 appendonly.aof
 dump.rdb
+yarn-error.log
+__my_tests.js
+.tmp_pr_message.txt
+*.env
+!config/*.env
+.stash/
+tags
+pkg/webui/assets/static/branding/
+data/lorawan-devices
+data/lorawan-frequency-plans
+data/lorawan-webhook-templates
+
+# managed by open-wa
+**.data.json
+**.node-persist**
+**_IGNORE_**
+# end managed by open-wa

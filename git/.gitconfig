@@ -1,12 +1,15 @@
 # This is Git's per-user configuration file.
 [user]
-	email = mail@kevinschiffer.de
+	email = mail@kevinschiffer.com
 	name = Kevin Schiffer
+	signingkey = F42D435A880F35A8B54D6B7BEADA84BCE6BB4066
+#	signingkey = DBA5C8EE15992E70
 
 [alias]
   b           = branch
-  ca          = commit .
-  c           = commit
+  ca          = commit . -v
+  c           = commit -v
+  cm          = commit -m
   graph       = log --graph --pretty=format:'%C(yellow)%h %C(black bold)%d %Creset%s' --all
   rst         = reset --hard HEAD
   lg          = log --oneline
@@ -14,6 +17,11 @@
   nb          = checkout -b
   s           = status -s
   undo-commit = reset --soft HEAD^
+  cp          = cherry-pick
+  figg        = diff
+  rb          = rebase
+  rbm         = rebase ttn/master -i
+  rbc         = rebase --continue
 
 # Delete local branches that have been merged into develop
 # dmb         = branch --merged develop | egrep -v '^\s*\*?\s*develop$' | xargs git branch -d
@@ -54,3 +62,17 @@
   branch  = magenta
   untracked = red
   nobranch  = red
+
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg
+[push]
+	default = current
+[core]
+#	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = /Users/kevinschiffer/.gitignore
+	editor = nvim
+	autocrlf = false
+[rerere]
+	enabled = true

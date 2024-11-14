@@ -1,16 +1,52 @@
-tap "tomanthony/brews"
-tap "homebrew/core"
 tap "homebrew/bundle"
-tap "caskroom/cask"
-brew "bash-completion"
-brew "cockroach"
-brew "ffmpeg", args: ["with-fdk-aac", "with-freetype", "with-libass", "with-libvorbis", "with-libvpx", "with-opus", "with-sdl2", "with-x265"]
-brew "git"
-brew "git-flow"
-brew "go"
-brew "hugo"
-brew "node"
-brew "ranger"
-brew "thefuck"
-brew "yarn", args: ["without-node"]
-brew "tomanthony/brews/itermocil"
+tap "homebrew/services"
+tap "mongodb/brew"
+# Library for manipulating PNG images
+brew "libpng"
+# TIFF library and utilities
+brew "libtiff"
+# Shell extension to jump to frequently used directories
+brew "autojump"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Interactive command-line tool for using emoji in commit messages
+brew "gitmoji"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Image manipulation library
+brew "jpeg"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Manage multiple Node.js versions
+brew "nvm"
+# CLI for Postgres with auto-completion and syntax highlighting
+brew "pgcli"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Object-relational database system
+brew "postgresql@14", restart_service: true
+# Python version management
+brew "pyenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Terminal multiplexer
+brew "tmux"
+# Maintained ctags implementation
+brew "universal-ctags"
+# ASGI web server
+brew "uvicorn"
+# Access X11 clipboards from the command-line
+brew "xclip"
+# JavaScript package manager
+brew "yarn"
+# Next-generation plugin manager for zsh
+brew "zplug"
+# UNIX shell (command interpreter)
+brew "zsh"
+# This package contains standard utilities for interacting with MongoDB.
+brew "mongodb/brew/mongodb-database-tools"
+cask "font-hack-nerd-font"

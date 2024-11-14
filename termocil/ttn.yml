@@ -1,9 +1,0 @@
-windows:
-  - name: TTN Console
-    root: ~/go/src/github.com/TheThingsNetwork/ttn
-    layout: tiled
-    panes:
-      - echo "pane 1"
-      - make stack.start
-      - ~/redis/src/redis-server
-      - cockroach start --insecure

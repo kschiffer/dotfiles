@@ -1,0 +1,57 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS folder attributes
+Icon?
+._*
+
+# macOS specific metadata files
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.fseventsd
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# Temporary and backup files
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.old
+*.backup
+
+# Vim specific files
+.viminfo
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Shell history files
+.bash_history
+.zsh_history
+
+# Custom dotfiles backups
+*.backup
+
+# Other specific dotfiles
+.nvm/
+.npm/
+.cache/
+.local/
+.python_history
+.node_repl_history
+.psql_history
+.lesshst
